@@ -1,0 +1,34 @@
+# 1. 深度学习核心底座（指定 PyTorch 官方 CUDA 12.4 专属源）
+--extra-index-url https://pytorch.org
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# 2. 图像、信号处理与基础数据底座（严格锁死以对齐 NumPy 1.x 生态）
+numpy==1.26.4
+scipy==1.10.1
+opencv-python-headless==4.8.0.76
+pillow==10.2.0
+pandas==2.2.1
+seaborn==0.13.2
+matplotlib==3.7.2
+scikit-learn==1.3.0
+
+# 3. rPPG-Toolbox 工程依赖与人脸定位库
+pyyaml==6.0.1
+h5py==3.9.0
+tqdm==4.66.1
+moviepy==1.0.3
+mediapipe==0.10.5
+face-alignment==1.4.1
+dlib==19.24.2
+
+# 4. 远程 Jupyter Notebook 稳固套件（锁死 tornado 防止多进程死锁）
+jupyter==1.0.0
+notebook==7.0.6
+ipykernel==6.25.2
+tornado==6.3.3
+pyzmq==25.1.1
+
+# 5. TensorFlow 与内置 TFLite 生态（锁死原生支持 NumPy 1.x 的末代 LTS 版本）
+tensorflow==2.15.1
